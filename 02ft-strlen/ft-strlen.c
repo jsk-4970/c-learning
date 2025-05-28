@@ -1,0 +1,12 @@
+#include "ft-strlen.h"
+
+int ft_strlen(const char *str)
+{
+
+	if(*str == '\0')
+		return 0;
+	return(1 + ft_strlen(str + 1));
+
+}
+
+
